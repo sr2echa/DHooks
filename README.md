@@ -7,7 +7,7 @@ Just a little collection of [Ifttt.com](https://ifttt.com/my_applets) applets wh
 ## 🏛️ Creating your Organization
 
 * Go to [https://platform.ifttt.com/](https://platform.ifttt.com/) and (Sign in)
-* Click (Get Started)
+* Click **(Get Started)**
 * On the next page fill the required fields and click (Next)
 * Change the page address to https://platform.ifttt.com/p/zzz/applets/private
 * It will redirect you to "Personal Applets" section, which is not accessible without creating an organization.
@@ -88,11 +88,11 @@ This means that Discord rate limited request because IFTTT sends it too frequent
 - wrong content-type (should be application/json)
 - bad request body:
 - empty, not json or invalid json also it should be filled correctly, [check this for more info](https://birdie0.github.io/discord-webhooks-guide/).
-- resulting json is broken (usually caused by newlines in ingredients (json doesn't support them in values) and Unicode characters (rare but happens sometimes)), can be fixed by escaping variables with `<<<{{ingredient}}>>>` (_the website says to use <<double>>, ignore that_)
-- error from server saying that one of fields hit limit (sadly, but ifttt doesn't show error that came from server). Try replace ingredients with data from applet logs and send it through Postman, Insomnia, other REST Client or using @glue's g.jp <JSON>, g.test <JSON> or g.webhook <JSON> commands (last one requires adding webhook through g.set webhook <url>).
-* Error 401 - webhook url isn't full. Usually happens on phone where is hard to copy url from web version of discord. I've made this simple web app https://get-discord-webhook-url.herokuapp.com/ that allows you to create webhook on phone.
-* Error 404 - url of webhook you're using has been removed. Means somebody removed it. Solution: create new webhook and replace old url.
-* Error 405 - Happens when you use other than POST methods.
+- **resulting json is broken** (usually caused by newlines in ingredients (json doesn't support them in values) and Unicode characters (rare but happens sometimes)), can be fixed by escaping variables with `<<<{{ingredient}}>>>` (_the website says to use <<double>>, ignore that_)
+- **error from server saying that one of fields hit limit** (sadly, but ifttt doesn't show error that came from server). Try replace ingredients with data from applet logs and send it through Postman, Insomnia, other REST Client or using @glue's g.jp <JSON>, g.test <JSON> or g.webhook <JSON> commands (last one requires adding webhook through g.set webhook <url>).
+* **Error 401** - webhook url isn't full. Usually happens on phone where is hard to copy url from web version of discord. I've made this simple web app https://get-discord-webhook-url.herokuapp.com/ that allows you to create webhook on phone.
+* **Error 404** - url of webhook you're using has been removed. Means somebody removed it. Solution: create new webhook and replace old url.
+* **Error 405** - Happens when you use other than POST methods.
 
 
 ## 🧰 Debug possible errors
