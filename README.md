@@ -15,6 +15,8 @@ Just a little collection of [Ifttt.com](https://ifttt.com/my_applets) applets wh
 
 ## 🖊️ Creating an Applet with Filter Code
 
+<img src="./Screenshots/Applet with filter code.png" width="600" align="center" />
+
 * Click (New Applet)
 * For if section select Trigger Service and Action, fill values below as you usually do in classic mode.
 * For then section select Webhooks and Make a web request, fill the fields with next values:
