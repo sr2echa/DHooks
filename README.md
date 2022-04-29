@@ -67,7 +67,30 @@ MakerWebhooks.makeWebRequest.setBody(JSON.stringify(body));
 * A blank message requires `{"content":""}`.
 * Make sure you select the correct if ... then argument e.g. If RSS then Webhook, If Twitter then...
 
----
+
+## 🦄 Useful websites to help you with regex & Discord Embeds
+* [Beginner tutorial on how to use Discord Webhooks](https://markramsey.com/2019/12/03/bringing-twitter-tweets-into-discord-channels/)
+* [RSS Bridge](https://github.com/RSS-Bridge/rss-bridge)
+* [Working with Twitetr filters](http://followthehashtag.com/help/hidden-twitter-search-operators-extra-power-followthehashtag/)
+* [Advance Twitter filters](https://developer.twitter.com/en/docs/tweets/rules-and-filtering/overview/standard-operators)
+* [Discord + Ifttt step-by-step PDF Guide by Ben](https://mega.nz/#!uc5gHYZC!1dqXUlgMwtioJpcxYnhhS0rfYo2u2T8L1afpIOYtFuc)
+* [Reddit.rss to Discord filter code + parser](https://gist.github.com/Birdie0/5830535877a94ab772efeb897e58e0e8)
+* [Google-Forms-to-Discord](https://github.com/Iku/Google-Forms-to-Discord/blob/master/google%20script.js)
+* [Tutorial how to use Discord Plex Notifications](https://blog.matiasnaess.no/2020/02/25/discord-plex-notifications/)
+
+
+## 🌐 Online formatters/validators
+* [Json Beautifier](https://jsonbeautifier.org/)
+* [Json Editor online](https://jsoneditoronline.org/)
+* [Json Formatter Online](https://jsonformatter-online.com/)
+* [Json Validator & Formatter](https://jsonformatter.curiousconcept.com/)
+* [Json Viewer](https://codebeautify.org/jsonviewer)
+* [Json formatter](https://jsonformatter.org/)
+* [Live Json Formatter](https://www.jsonformatter.io/)
+* [Regular Expressions 101](https://regex101.com/)
+* [Unicode Text Converter](http://qaz.wtf/u/convert.cgi)
+* [Visualizer and validator for Discord embeds](https://leovoel.github.io/embed-visualizer/) (_ensure you enable "webhook mode"_)
+
 
 ## 📰 How a typical webhook must look like
 
