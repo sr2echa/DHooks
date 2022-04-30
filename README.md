@@ -129,4 +129,579 @@ This means that Discord rate limited request because IFTTT sends it too frequent
 3. Click the gear icon in the corner.
 4. Click `View activity log`.
 
+  
+## Verry Basic Twitter feed
+
+Pretty basic, nothing special.
+
+```json
+{
+    "content":"@<<<{{UserName}}>>> posted: <<<{{LinkToTweet}}>>> <<<{{TweetEmbedCode}}>>>"
+}
+```
+
+**[`^        back to top        ^`](#readme)**
+
+
+### Advance YouTube Upload finished announce feed
+
+```json
+{
+    "content": "Hello @everyone peeps, **<<<{{AuthorName}}>>>** has uploaded a new video! <<<{{Url}}>>>",
+    "embeds": [
+      {
+        "title": "<<<{{Title}}>>>",
+        "description": "<<<{{Description}}>>>",
+        "url": "<<<{{Url}}>>>",
+        "color": 6570404,
+        "fields": [
+          {
+            "name": "Timestamp",
+            "value": "<<<{{CreatedAt}}>>>",
+            "inline": true
+          },
+          {
+            "name": "Added By",
+            "value": "Magic",
+            "inline": true
+          }
+        ],
+        "author":
+        {
+          "name": "<<<{{AuthorName}}>>>",
+          "url": "https://www.youtube.com/channel/",
+          "icon_url": "https://yt3.ggpht.com/a/AATXAJyI_DBeZc7O5cJ-Ih5ovltedR1HBIvcVH9ERQ=s100-c-k-c0xffffffff-no-rj-mo"
+        },
+        "footer":
+        {
+          "text": "Notice: Please be patient if the bot is broken, or there is no Application Officer around attending to you.",
+          "icon_url": "https://yt3.ggpht.com/a/AATXAJyI_DBeZc7O5cJ-Ih5ovltedR1HBIvcVH9ERQ=s100-c-k-c0xffffffff-no-rj-mo"
+        }
+      }
+    ]
+}
+```
+
+**[`^        back to top        ^`](#readme)**
+
+
+### Android App Updates
+
+```json
+{
+  "username":"App Update",
+  "content":"<<<{{Name}}>>>(<<<{{Version}}>>>)\n <<<{{AppStoreUrl}}>>> \n Changelog: <<<{{ReleaseNotes}}>>>"
+}
+```
+**[`^        back to top        ^`](#readme)**
+
+
+### Reddit Game Findings (_works basically with every Giveaway/Gift Subreddit_)
+
+```json
+{
+    "embeds": [
+    {
+     "title": "<<<{{Title}}>>>",
+     "url": "<<<{{PostURL}}>>>",
+     "description": "<<<{{Content}}>>>",
+     "thumbnail":
+          {
+          "url": "<<<{{ImageURL}}>>>"
+          },
+          "footer": { "icon_url": "https://www.redditstatic.com/desktop2x/img/favicon/favicon-32x32.png",
+          "text": "/u/<<<{{Author}}>>> | <<<{{PostedAt}}>>>"
+        }
+      }
+    ]
+}
+```
+
+**[`^        back to top        ^`](#readme)**
+
+### Thank user for the follow on Twitter
+
+```json
+{ "content":"Thx For Following: @{{FullName}}\nFollow Count: {{FollowerCount}}" }
+```
+
+
+### Twitch went live Feed
+
+```json
+{
+    "content": "{{ChannelName}} went live on Twitch",
+    "embeds": [
+    {
+      "title": "{{ChannelUrl}}",
+      "url": "{{ChannelUrl}}",
+      "color": 6570404,
+      "footer":
+      {
+      "text": "{{CreatedAt}}"
+    },
+      "image":
+      {
+      "url": "{{StreamPreview}}"
+    },
+      "author":
+      {
+      "name": "{{ChannelName}} is now streaming"
+    },
+      "fields": [
+    {
+      "name": "Playing",
+      "value": "{{Game}}",
+      "inline": true
+    },
+    {
+      "name": "Started at (streamer timezone)",
+      "value": "{{CreatedAt}}",
+      "inline": true
+      }
+     ]
+    }
+  ]
+}
+```
+
+**[`^        back to top        ^`](#readme)**
+
+
+### Twitch with viewer count & embed preview
+
+```json
+{
+ "username":"{{ChannelName}}",
+ "avatar_url":"https://avatar.glue-bot.xyz/twitch/%7B%7BChannelName%7D%7D",
+ "embeds": [
+   {
+     "author":
+     { "name": "Candy",
+     "url": "http://twitch.tv/twitch_candyx",
+     "icon_url": "https://static-cdn.jtvnw.net/jtv_user_pictures/4aecbebc-b161-40ba-843a-86a497fe25be-profile_image-300x300.png"
+     },
+     "title":" {{ChannelName}}", "url":" {{ChannelUrl}}",
+     "description":"Candy is now live!",
+     "color":6570405,
+     "thumbnail":
+     {
+       "url": "https://static-cdn.jtvnw.net/jtv_user_pictures/4aecbebc-b161-40ba-843a-86a497fe25be-profile_image-300x300.png"
+     },
+       "fields":[
+         {
+           "name":"Game", "value":" {{Game}}", "inline":true
+         },
+         {
+           "name":"Viewers", "value":" {{CurrentViewers}}", "inline":true
+           }
+           ],
+           "image":
+           {
+           "url":" {{StreamPreview}}"
+     }
+    }
+  ]
+}
+ ```
+**[`^        back to top        ^`](#readme)**
+
+
+### Twitter Basic Feed
+
+```json
+{"content":" <<<{{EntryTitle}}>>> <<<{{EntryContent}}>>> "}
+```
+
+
+### Twitter Advance Feed
+
+```json
+{
+  "embeds": [
+    {
+      "description": "**Elon Musk tweeted this at {{CreatedAt}}**\n\n> **content**\n\n\n\n",
+      "color": 11927808,
+      "fields": [
+        {
+          "name": "Link to Tweet",
+          "value": "Click [here]({{LinkToTweet}}) to go to the original tweet."
+        }
+      ],
+      "author":
+      {
+      "name": "{{UserName}} tweeted:",
+      "url": "https://twitter.com/elonmusk/",
+      "icon_url": ""
+      }
+    }
+  ]
+}
+```
+
+
+### Twitter Advance Feed with Embed
+
+```json
+{
+  "embeds": [
+    {
+      "title": "LINK",
+      "color": 1942002,
+      "url": "{{LinkToTweet}}",
+      "author":
+       {
+        "name": "Melon Husk (@elonmusk)",
+        "url": "https://twitter.com/ElonMusk/",
+        "icon_url": ""
+        },
+        "footer":
+        {
+          "text": "Elon Musk! at {{CreatedAt}}!",
+          "icon_url": ""
+        },
+        "description": "Elon Musk tweeted this : {{Text}}"
+        }
+      ]
+}
+```
+
+**[`^        back to top        ^`](#readme)**
+
+
+### Instagram (basic)
+
+```json
+{
+  "embeds": [
+    {
+      "title":"Title",
+      "url":"{{Url}}",
+      "author":
+      {
+        "name":"random",
+        "url":"https://www.instagram.com/random/"
+      },
+      "description":"{{Caption}}",
+      "image": {"url": "{{SourceUrl}}"
+      }
+    }
+  ]
+}
+```
+
+
+### Instagram (very simple)
+
+```json
+{
+  "embeds": [
+    {
+      "title":"New Post From Random on Instagram!",
+      "description":" <<<{{Caption}}>>>",
+      "color":12592603
+    }
+  ]
+}
+```
+
+**[`^        back to top        ^`](#readme)**
+
+
+### Nitter (Twitter) Tweet vi role-id
+
+```json
+{
+  "username": "<<<{{UserName}}>>>",
+  "avatar_url": "",
+  "content": "<@&role-id>",
+  "embeds": [
+    {
+    "title": "New Tweet!",
+    "url": "<<<{{LinkToTweet}}>>>",
+    "color": 33972,
+    "description": "<<<{{Text}}>>>"
+    }
+  ]
+}
+```
+
+**[`^        back to top        ^`](#readme)**
+
+
+### RSS Feed (Basic)
+
+```json
+{
+  "embeds": [
+    { "title": "{{Title}}", "url": "{{PostURL}}", "description": "{{Content}}" }
+  ]
+}
+```
+
+
+### RSS (Advance)
+
+```json
+{
+  "content":"**Test**",
+  "embeds": [
+    {
+      "title":"{{EntryTitle}}",
+      "description":"{{EntryContent}}",
+      "url":"https://discordapp.com",
+      "color":14510884,
+      "footer":{"icon_url":"https://cdn.discordapp.com/embed/avatars/0.png",
+      "text":"{{FeedTitle}}"},
+      "thumbnail":
+      {
+        "url":"https://cdn.discordapp.com/embed/avatars/0.png"},
+        "author":
+      {
+        "name":"{{EntryAuthor}}",
+        "url":"{{FeedUrl}}",
+        "icon_url":"https://cdn.discordapp.com/embed/avatars/0.png"
+      }
+     }
+   ]
+}
+```
+
+**[`^        back to top        ^`](#readme)**
+
+
+## Old and unused stuff
+
+### Pizza Delivery (_I do not use it anymore since YAGPDB has a reminder function_)
+
+```json
+{
+  "embeds": [
+    {
+    "author":
+    {
+      "name": "Pizza Delivery Girl",
+      "url": "https://www.reddit.com/r/Pizza/",
+      "icon_url": ""
+    },
+    "description": "Your pizza is ready!\n:timer:ETA: 10 minutes."
+   }
+  ]
+}
+```
+
+**[`^        back to top        ^`](#readme)**
+
+
+### Tumblr
+
+```json
+{
+   "username":"Bot Name",
+   "avatar_url":"The URL of a Profile Picture/Thumbnail For The Bot Goes Here",
+   "embeds": [
+      {
+         "title":"{{Title}}",
+         "url":"{{Url}}",
+         "description":"{{Body}}",
+         "footer":{
+            "text":"Uploaded On: {{Time}}"
+         }
+      }
+   ]
+}
+```
+
+**[`^        back to top        ^`](#readme)**
+
+
+### Facebook
+
+I'm not active on Facebook (or not really), so I dropped it.
+
+```json
+{
+  "username":"Bot Name",
+  "avatar_url":"The URL of a Profile Picture/Thumbnail For The Bot Goes Here",
+  "embeds": [
+    {
+      "title":"{{UpdatedAt}}",
+      "url":"{{PageUrl}}",
+      "author":
+      {
+        "name":"{{PageName}}",
+        "url":"https://facebook.com/{{PageName}}"
+      },
+      "description":"{{Message}}"
+      }
+    ]
+}
+```
+
+**[`^        back to top        ^`](#readme)**
+
+
+### SoundClood
+
+Sadly I'm not really active on SC anymore (_no time_).
+
+```json
+{
+    "content": "New track posted to SoundCloud",
+    "embeds": [
+        {
+            "title": "<<<{{Title}}>>>",
+            "url": "<<<{{TrackUrl}}>>>",
+            "color": 16742144,
+            "footer": {
+                "text": "<<<{{Tags}}>>> || <<<{{CreatedAt}}>>>"
+            },
+            "thumbnail": {
+                "url": "<<<{{ImageUrl}}>>>"
+            },
+            "author": {
+                "name": "<<<{{Username}}>>>",
+                "url": "<<<{{UserProfileUrl}}>>>",
+                "icon_url": "<<<{{ImageUrl}}>>>"
+            },
+            "fields": [
+                {
+                    "name": "Description",
+                    "value": "<<<{{Description}}>>>"
+                }
+            ]
+        }
+    ]
+}
+```
+
+**[`^        back to top        ^`](#readme)**
+
+
+### GitHub Webhook
+
+I replaced it with Yappy Bot. `timestamp` line might invalidate json.
+
+```json
+{
+  "embeds": [
+    {
+      "title": "[<<<{{RepositoryName}}>>>] <<<{{PullRequestTitle}}>>>",
+      "description": "<<<{{PullRequestBody}}>>>",
+      "url": "<<<{{PullRequestURL}}>>>",
+      "color": 21953,
+      "timestamp": "<<<{{CreatedAt}}>>>",
+      "author": {
+        "name": "<<<{{AuthorUsername}}>>>",
+        "url": "https://github.com/<<<{{AuthorUsername}}>>>",
+        "icon_url": "<<<{{AuthorAvatarImageURL}}>>>"
+      }
+    }
+  ]
+}
+```
+
+**[`^        back to top        ^`](#readme)**
+
+
+### Yet another basic Twitter feed
+
+```json
+{
+  "username": "@MelonHusk tweeted",
+  "content": "@USerName tweeted this {{CreatedAt}} : {{LinkToTweet}} "
+}
+```
+
+**[`^        back to top        ^`](#readme)**
+
+
+### NASA - Image of the Day
+
+```json
+{
+  "content": "NASA posted something new!",
+  "embeds": [
+    {
+      "title": "<<<{{ImageTitle}}>>>",
+    "description": "<<<{{Description}}>>>",
+    "color":15193,
+    "image":
+    {
+      "url": "<<<{{ImageSourceURL}}>>>"},
+      "author":
+      {
+      "name":"Image of the Day by NASA"},
+      "footer":
+      {
+        "text": "<<<{{PublishedDate}}>>>"
+    }
+    }
+  ]
+}
+```
+
+**[`^        back to top        ^`](#readme)**
+
+
+### Normal RSS-Feed
+
+```json
+{
+  "embeds": [
+    {
+      "title": "? New Post ? ",
+      "description": "<<<{{Caption}}>>>",
+      "image": {
+        "url": "<<<{{SourceUrl}}>>>"
+      },
+      "footer": {
+        "text": "<<<{{CreatedAt}}>>>"
+      },
+      "url": "<<<{{Url}}>>>"
+    }
+  ]
+}
+```
+
+**[`^        back to top        ^`](#readme)**
+
+
+### Google Calendar Event
+
+```json
+{
+  "content": "<@user-id> <<<{{Title}}>>> is starting in around 30 minutes! ",
+  "embeds": [{
+    "title": "{{Title}}",
+    "description": "<<<{{Description}}>>>",
+    "url": "<<<{{EventUrl}}>>>",
+    "color": 526591,
+    "author": {
+      "name": "SSI Calendar",
+      "url": "",
+      "icon_url": "https://calendar.google.com/googlecalendar/images/favicon_v2014_31.ico"
+    },
+    "fields": [
+      {
+        "name": "Starts",
+        "value": "<<<{{Starts}}>>>",
+        "inline": true
+      },
+      {
+        "name": "Ends",
+        "value": "<<<{{Ends}}>>>",
+        "inline": true
+      },
+      {
+        "name": "Location",
+        "value": "<<<{{Where}}>>>"
+      }
+    ]
+  }]
+}
+```
+
+**[`^        back to top        ^`](#readme)**
+
 
