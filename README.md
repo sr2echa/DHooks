@@ -3,6 +3,44 @@
 
 Just a little collection of [Ifttt.com](https://ifttt.com/my_applets) applets which are linked to [Discord webhooks](https://support.discord.com/hc/en-us/articles/228383668-Webhooks-gebruiken).
 
+## 🎗️ Table of Contents
+* [DHook](#dhook)
+  * [Table of Contents](#table-of-contents)
+  * [Creating your Organization](#creating-your-organization)
+  * [Creating an Applet with Filter Code](#creating-an-applet-with-filter-code)
+  * [Activating your first Applet](#activating-your-first-applet)
+  * [Common mistakes people often run into](#common-mistakes-people-often-run-into)
+  * [Useful websites to help you with regex & Discord Embeds](#useful-websites-to-help-you-with-regex--discord-embeds)
+  * [Online formatters/validators](#online-formattersvalidators)
+  * [How a typical webhook must look like](#how-a-typical-webhook-must-look-like)
+  * [What does `Action failure message: Rate limited by the remote server` mean?](#what-does-action-failure-message-rate-limited-by-the-remote-server-mean)
+  * [Debug possible errors](#debug-possible-errors)
+  * [My first webhook ever (Twitter)](#my-first-webhook-ever-twitter)
+    * [Advance YouTube Upload finished announce feed](#advance-youtube-upload-finished-announce-feed)
+    * [Android App Updates](#android-app-updates)
+    * [Reddit Game Findings (_works basically with every Giveaway/Gift Subreddit_)](#reddit-game-findings-works-basically-with-every-giveawaygift-subreddit)
+    * [Thank user for the follow on Twitter](#thank-user-for-the-follow-on-twitter)
+    * [Twitch went live Feed](#twitch-went-live-feed)
+    * [Twitch with viewer count & embed preview](#twitch-with-viewer-count--embed-preview)
+    * [Twitter Basic Feed](#twitter-basic-feed)
+    * [Twitter Advance Feed](#twitter-advance-feed)
+    * [Twitter Advance Feed with Embed](#twitter-advance-feed-with-embed)
+    * [Instagram (basic)](#instagram-basic)
+    * [Instagram (very simple)](#instagram-very-simple)
+    * [Nitter (Twitter) Tweet vi role-id](#nitter-twitter-tweet-vi-role-id)
+    * [RSS Feed (Basic)](#rss-feed-basic)
+    * [RSS (Advance)](#rss-advance)
+  * [Old and unused stuff](#old-and-unused-stuff)
+    * [Pizza Delivery (_I do not use it anymore since YAGPDB has a reminder function_)](#pizza-delivery-i-do-not-use-it-anymore-since-yagpdb-has-a-reminder-function)
+    * [Tumblr](#tumblr)
+    * [Facebook](#facebook)
+    * [SoundClood](#soundclood)
+    * [GitHub Webhook](#github-webhook)
+    * [Yet another basic Twitter feed](#yet-another-basic-twitter-feed)
+    * [NASA - Image of the Day](#nasa---image-of-the-day)
+    * [Normal RSS-Feed](#normal-rss-feed)
+    * [Google Calendar Event](#google-calendar-event)
+
 
 ## 🏛️ Creating your Organization
 
